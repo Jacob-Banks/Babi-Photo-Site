@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babi photos </title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!---- fist grid containg multiple photo story---->  
+  <div id="story-container">
+    <div class="storyIntro"> Click on a photo to see a story. </div>   
+    
+    <div id= "storyFirst">
+      <figure>
+        <img  src="./lukephotos/lcoat1.jpg" onclick="switchGrids('lukeStoryFirst')"/>
+        <figcaption>A Coat</figcaption>
+      </figure>
+      <figure>
+        <img  src="./lukephotos/ltrip1.jpg" onclick="switchGrids('lukeStorySecond')"/>
+        <figcaption>A trip to see lights </figcaption>
+      </figure>
+      <figure>
+        <img id="" src="./lukephotos/lroom1.jpg" onclick="switchGrids('lukeStoryThird')"/>
+        <figcaption>Our rooms</figcaption>
+      </figure>
+    </div> 
+   
+    <div id= "storySecond">
+      <figure>
+      <img id="a4" src='./lukephotos/latwork1.jpg' onclick="switchGrids('lukeStoryFourth')"/>
+      <figcaption>Covid working</figcaption>
+      </figure>
+      <figure>
+        <img  src='./lukephotos/beemxmas1.jpg' onclick="switchGrids('lukeStoryFifth')"/>
+        <figcaption>Xmass</figcaption>
+        </figure>
+    </div>
+    <div id= "storyLast">
+    
+    </div>
+    
+    <div id="homepage">
+      <a  href="./index.html"><img id="homepage" src="menu.jpg"/></a>
+    </div> 
+  </div>
+    
+  
+  
+  
+  <div id="grid-container-three">
+     <div id="theStory" onclick="move()">
+        <img  id="the_image">
+        <figcaption id = "the_discription"> </figcaption>
+        <video id="myVideoStory" width="85%" height="auto" onmouseover="playVideoStory()">
+          <source id ="vid_src" src="" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></a>
+        <p id="videocaption"> </p>  
+     </div>
+    </div>  
+
+    <script type="text/javascript" src= "./script.js"></script>     
+
+  </body>
+
+</div>
+
+<div class="hidden">
+  <script type="text/javascript">
+    //--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "./lukephotos/lcoat1.jpg",
+        "./lukephotos/lcoat2.jpg",
+        "./lukephotos/lcoat3.jpg",
+        "./lukephotos/lcoat4.jpg",
+        "./lukephotos/lcoat5.jpg",
+        "./lukephotos/ltrip1.jpg",
+        "./lukephotos/ltrip2.jpg",
+        "./lukephotos/ltrip4.jpg",
+        "./lukephotos/ltrip5.jpg",
+        "./lukephotos/ltrip6.jpg",
+        "./lukephotos/ltrip7.jpg",
+        "./lukephotos/ltrip8.jpg",
+        "./lukephotos/ltrip9.jpg",
+        "./lukephotos/lroom1.jpg", 
+        "./lukephotos/lroom2.jpg", 
+        "./lukephotos/lroom3.jpg", 
+        "./lukephotos/lroom4.jpg",
+        "./lukephotos/latwork1.jpg", 
+        "./lukephotos/latwork2.jpg", 
+        "./lukephotos/latwork3.jpg", 
+        "./lukephotos/latwork4.jpg", 
+        "./lukephotos/latwork5.jpg", 
+        "./lukephotos/latwork6.jpg", 
+        "./lukephotos/latwork7.jpg"
+      )
+    //--><!]]>
+  </script> 
+</div>
+</html>
+
+<!-- 
+ <button id= "nexButton">next</button>
+ 
+   <div id= "homeButton">
+       <a href="./babiindex.html">back to everyone</a>
+   </div>
+   --->

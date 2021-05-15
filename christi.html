@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babi photos </title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!---- fist grid containg multiple photo story---->  
+  <div id="story-container">
+    <div class="storyIntro"> </div>   
+    
+    <div id= "storyFirst">
+      <figure>
+        <img  id = "tf" src="./cristiphotos/c12.jpg" onclick="switchGrids('tiniStoryFirst')"/>
+        <figcaption>Reno Time</figcaption>
+      </figure>
+      <figure>
+        <img  src="./cristiphotos/c3.jpg" onclick="switchGrids('tiniStorySecond')"/>
+        <figcaption> A dogs life </figcaption>
+      </figure>
+      <figure>
+        <img  src="./cristiphotos/cMerida3.jpg" onclick="switchGrids('tiniStoryThird')"/>
+        <figcaption> Not Reno Time </figcaption>
+      </figure>
+    </div> 
+   
+    
+    
+    <div id="homepage">
+      <a  href="./index.html"><img id="homepage" src="menu.jpg"/></a>
+    </div> 
+  </div>
+    
+  
+  
+  
+  <div id="grid-container-three">
+    <div id="theStory" onclick="move()">
+       <img  id="the_image">
+       <figcaption id = "the_discription"> </figcaption>
+       
+       <video id="myVideoStory" width=1024 height=1024  autoplay>
+         <source id ="vid_src" src="" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+       <p id="videocaption"> </p>  
+    </div>
+   </div>  
+
+    <script type="text/javascript" src= "./script.js"></script>     
+
+  </body>
+
+</div>
+
+
+<div class="hidden">
+  <script type="text/javascript">
+    //--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "./cristiphotos/c1.jpg",
+        "./cristiphotos/c2.jpg",
+        "./cristiphotos/c3.jpg",
+        "./cristiphotos/c4.jpg",
+        "./cristiphotos/c5.jpg",
+        "./cristiphotos/c6.jpg",
+        "./cristiphotos/c7.jpg",
+        "./cristiphotos/c8.jpg",
+        "./cristiphotos/c9.jpg",
+        "./cristiphotos/c10.jpg",
+        "./cristiphotos/c11.jpg",
+        "./cristiphotos/c12.jpg",
+        "./cristiphotos/c13.jpg",
+        "./cristiphotos/cMerida1.jpg",
+        "./cristiphotos/cMerida2.jpg",
+        "./cristiphotos/cMerida3.jpg",
+        "./cristiphotos/cMerida4.jpg"
+                
+      )
+    //--><!]]>
+  </script> 
+</div>
+</html>

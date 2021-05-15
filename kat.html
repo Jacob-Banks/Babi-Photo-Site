@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babi photos </title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!---- fist grid containg multiple photo story---->  
+  <div id="story-container">
+    <div class="storyIntro"> </div>   
+    
+    <div id= "storyFirst">
+      <figure>
+        <img  src="./katphotos/kbeach3.jpg" onclick="switchGrids('katFirstArray')"/>
+        <figcaption>The Beach</figcaption>
+      </figure>
+      <figure>
+        <img  src="./katphotos/kcela2.jpg" onclick="switchGrids('katSecondArray')"/>
+        <figcaption> Celabrations</figcaption>
+      </figure>
+      <figure>
+        <img id="" src="./katphotos/kfunt10.jpg" onclick="switchGrids('katThirdArray')"/>
+        <figcaption>Fun Times</figcaption>
+      </figure>
+    </div> 
+   
+    <div id= "storySecond">
+      <figure>
+         <img id="a4" src="./katphotos/kiris5.jpg" onclick="switchGrids('katFourthArray')"/>
+         <figcaption>Iris</figcaption>
+      </figure>
+      <figure>
+        <img id="a4" src="./katphotos/kxmass1.jpg" onclick="switchGrids('katFifthArray')"/>
+        <figcaption>Xmass</figcaption>
+     </figure>
+    </div>
+
+
+    <div id= "storyLast">
+    </div>
+    
+    <div id="homepage">
+      <a  href="./index.html"><img id="homepage" src="menu.jpg"/></a>
+    </div> 
+  </div>
+    
+  
+  
+  
+  <div id="grid-container-three">
+     <div id="theStory" onclick="move()">
+        <img  id="the_image">
+        <figcaption id = "the_discription"> </figcaption>
+        
+        <video id="myVideoStory" width=1024 height=1024  autoplay>
+          <source id ="vid_src" src="" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <p id="videocaption"> </p>  
+     </div>
+    </div>  
+
+    <script type="text/javascript" src= "./script.js"></script>     
+
+  </body>
+
+</div>
+<div class="hidden">
+  <script type="text/javascript">
+    //--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "./katphotos/kbeach1.jpg",
+        "./katphotos/kbeach2.jpg",
+        "./katphotos/kbeach3.jpg",
+        "./katphotos/kbeach4.jpg",
+        "./katphotos/kbeach5.jpg",
+        "./katphotos/kbeach6.jpg",
+        "./katphotos/kbeach7.jpg",
+        "./katphotos/kcela1.jpg",
+        "./katphotos/kcela2.jpg",
+        "./katphotos/kcela3.jpg",
+        "./katphotos/kcela4.jpg",
+        "./katphotos/kcela5.jpg",
+        "./katphotos/kcela6.jpg",
+        "./katphotos/kcela7.jpg",
+        "./katphotos/kcela8.jpg",
+        "./katphotos/kfunt1.jpg",
+        "./katphotos/kfunt2.jpg",
+        "./katphotos/kfunt3.jpg",
+        "./katphotos/kfunt4.jpg",
+        "./katphotos/kfunt5.jpg",
+        "./katphotos/kfunt6.jpg",
+        "./katphotos/kfunt7.jpg",
+        "./katphotos/kfunt8.jpg",
+        "./katphotos/kfunt9.jpg",
+        "./katphotos/kfunt10.jpg",
+        "./katphotos/kfunt11.jpg",
+        "./katphotos/kfunt12.jpg",
+        "./katphotos/kfunt13.jpg",
+        "./katphotos/kfunt14.jpg",
+        "./katphotos/kiris1.jpg",
+        "./katphotos/kiris2.jpg",
+        "./katphotos/kiris3.jpg",
+        "./katphotos/kiris4.jpg",
+        "./katphotos/kiris5.jpg",
+        "./katphotos/kiris6.jpg",
+        "./katphotos/kiris7.jpg",
+        "./katphotos/kiris8.jpg",
+        "./katphotos/kiris9.jpg",
+        "./katphotos/kiris10.jpg",
+        "./katphotos/kxmass1.jpg",
+        "./katphotos/kxmass2.jpg",
+        "./katphotos/kxmass3.jpg",
+        "./katphotos/kxmass4.jpg",
+
+);
+    
+    //--><!]]>
+  </script> 

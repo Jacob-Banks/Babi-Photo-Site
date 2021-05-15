@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babi photos </title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!---- fist grid containg multiple photo story---->  
+  <div id="grid-container-two">
+    <div class="storyIntro">Click on a photo to see a story. </div>   
+    
+    <div id= "storyFirst">
+      <img id="af" src="./photos/solbabic.jpg" onclick="switchGrids('aliceStoryFirst')"/>
+      <figcaption>Solly Wolly</figcaption>
+    </div>
+    
+      <div id= "storySecond">
+       <img id="a2" src="./photos/cakea.jpg" onclick="switchGrids('aliceStorySecond')"/>
+       <figcaption> Gotta have cake </figcaption>
+      </div>
+    
+    <div id= "storyThird">
+      <img id="a3" src="./photos/beach.jpg" onclick="switchGrids('aliceStoryThird')"/>
+      <figcaption>We love the beach</figcaption>
+    </div> 
+    <div id= "storyFourth">
+      <img id="a4" src="./photos/hdress.jpg" onclick="switchGrids('aliceStoryFourth')"/>
+      <figcaption>Hallows eve</figcaption>
+    </div>
+    <div id= "storyLast">
+    
+    </div>
+    
+    <div id="homepage">
+      <a id="homepage" href="./index.html"><h1>Back to everyone</h1></a> 
+    </div>
+  
+    </div>
+    
+  </div>
+  <div class="hidden">
+    <script type="text/javascript">
+      //--><![CDATA[//><!--
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+          }
+        }
+        preload(
+          "./photos/beacha.jpg",
+          "./photos/beachb.jpg",
+          "./photos/beachd.jpg",
+          "./photos/beache.jpg",
+          "./photos/beachf.jpg",
+          "./photos/beachg.jpg",
+          "./photos/beachi.jpg",
+          "./photos/beachlast.jpg",
+          "./photos/beachw.jpg"
+          
+        )
+      //--><!]]>
+    </script> 
+     <!---- second grid, containing individual photo slide--->
+  
+    <div id="grid-container-three">
+     <div id="theStory" onclick="move()">
+        <img  id="the_image"src="./photos/defualt.jpg">
+        <figcaption id = "the_discription"> love you babi</figcaption>
+        <video id="myVideoStory" width="85%" height="auto" onmouseover="playVideoStory()">
+          <source id ="vid_src" src="" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></a>
+        <p id="videocaption"> </p>  
+     </div>
+    </div>  
+
+    <script type="text/javascript" src= "./script.js"></script>     
+
+  </body>
+
+</div>
+
+
+
+</html>
+
+<!-- 
+ <button id= "nexButton">next</button>
+ 
+   <div id= "homeButton">
+       <a href="./babiindex.html">back to everyone</a>
+   </div>
+   --->

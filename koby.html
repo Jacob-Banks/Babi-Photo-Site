@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babi photos </title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!---- fist grid containg multiple photo story---->  
+  <div id="story-container">
+    <div class="storyIntro"> </div>   
+    
+    <div id= "storyFirst">
+      <figure>
+        <img  src="./kobyphotos/kday1.jpg" onclick="switchGrids('kobyStoryFirst')"/>
+        <figcaption>My Day</figcaption>
+      </figure>
+      <figure>
+        <img  src="./kobyphotos/kcook1.jpg" onclick="switchGrids('kobyStorySecond')"/>
+        <figcaption> Chistmasss Cookies </figcaption>
+      </figure>
+      <figure>
+        <img id="" src="./kobyphotos/kteach1.jpg" onclick="switchGrids('kobyStoryThird')"/>
+        <figcaption>Fun with Ben and Emma</figcaption>
+      </figure>
+    </div> 
+   
+    <div id= "storySecond">
+      
+    </div>
+    <div id= "storyLast">
+    
+    </div>
+    
+    <div id="homepage">
+      <a  href="./index.html"><img id="homepage" src="menu.jpg"/></a>
+    </div> 
+  </div>
+    
+  
+  
+  
+  <div id="grid-container-three">
+    <div id="theStory" onclick="move()">
+       <img  id="the_image">
+       <figcaption id = "the_discription"> </figcaption>
+       
+       <video id="myVideoStory" width=1024 height=1024  autoplay>
+         <source id ="vid_src" src="" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+       <p id="videocaption"> </p>  
+    </div>
+   </div>  
+
+    <script type="text/javascript" src= "./script.js"></script>     
+
+  </body>
+
+</div>
+
+<div class="hidden">
+  <script type="text/javascript">
+    //--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "./kobyphotos/kday5.jpg",
+        "./kobyphotos/kday1.jpg",
+        "./kobyphotos/kday2.jpg",
+        "./kobyphotos/kday3.jpg",
+        "./kobyphotos/kday4.jpg",
+        "./kobyphotos/kpep2.jpg",
+        "./kobyphotos/kpep1.jpg",
+        "./kobyphotos/kcook1.jpg",
+        "./kobyphotos/kcook2.jpg",
+        "./kobyphotos/kcook3.jpg",
+        "./kobyphotos/kcook4.jpg",
+        "./kobyphotos/kcook5.jpg",
+        "./kobyphotos/kteach1.jpg",
+        "./kobyphotos/kteach2.jpg",
+        "./kobyphotos/kteach3.jpg",
+        "./kobyphotos/kgun1.jpg",
+        "./kobyphotos/kgun2.jpg",
+ 
+        "./kobyphotos/kteach3.jpg",
+ 
+        "./kobyphotos/kteach4.jpg",)
+  </script> 
+</div>
+</html>
