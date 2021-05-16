@@ -417,6 +417,16 @@ function move(){
    the_image.src = tellingStory[index][0];
    the_discription.innerHTML =tellingStory[index][1];
 }
+function moveBack(){
+   if(index == 0){   
+      location.reload();
+   }
+   index--;
+   the_video.src = tellingStory[index][2];
+   the_videocaption.innerHTML = tellingStory[index][3];
+   the_image.src = tellingStory[index][0];
+   the_discription.innerHTML =tellingStory[index][1];
+}
 // set story vids to auto play on mouseover
 function playVideoStory() { 
    the_video.autoplay = true;
